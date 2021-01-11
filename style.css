@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: #505962;
+    background-color: hsl(0, 0%, 98%);
+}
+
+/* navigation */
+.navbar {
+    background-color: white;
+    width: 100%;
+    height: 3.5rem;
+}
+
+.navbar-brand img {
+    height: 1rem;
+}
+
+.narrow {
+    width: 85%;
+}
+
+.navbar-nav  {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+  
+.navbar-nav li {
+    padding: .5rem;
+}
+
+.navbar .navbar-nav .nav-link {
+    opacity: .6;
+    color: #44484d;
+    padding-top: .8rem;
+    font-size: 1rem;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid hsl(136, 65%, 51%);
+    border-bottom-width: 2px;
+}
+
+.navbar-toggler>.close {
+    display: inline;
+}
+
+
+.navbar-toggler:not(.collapsed)>.navbar-toggler-icon,
+.navbar-toggler.collapsed>.close {
+    display: none;
+}
+
+.btn-primary {
+    background: linear-gradient(-60deg, hsl(192, 70%, 51%),hsl(136, 65%, 51%));
+    border-radius: 4rem;
+    border: none;
+    padding: 0.5rem 2rem;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(-60deg, hsl(192, 74%, 66%),hsl(136, 54%, 61%));
+}
+
+
+/* 1st container section */
+.mt-4 {
+    position: relative;
+    top: 2.5rem;
+}
+
+.mt-4 h1 {
+    margin-top: 12rem;
+    font-size: 4.5rem;
+}
+
+.mt-4 p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+#pat {
+    position: relative;
+    top: -25%;
+    right: 15%;
+    /* transform: translate(-50%, -100%); */
+    /* width: 100%; */
+    height: 100%;
+}
+
+#pat2 {
+    display: none;
+}
+
+#mock {
+    position: absolute;
+    top: -10%;
+    right: -35%;
+    /* width: 100%; */
+}
+
+
+/* 2nd container */
+.jumbotron {
+    position: relative;
+    top: -18.5rem;
+    z-index: -4;
+    margin: 0 -2rem;
+    border-radius: none;
+}
+
+.jumbotron .wide {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.jumbotron .wide h2 {
+    font-size: 3rem;
+    letter-spacing: 0.05rem;
+}
+
+.jumbotron .wide h3 {
+    font-size: 2rem;
+}
+
+#lead {
+    width: 50%;
+    margin: 1.5rem 0 4rem;
+}
+
+.jumbotron .wide p {
+    font-size: 1.2rem;
+    opacity: .7;
+    width: 100%;
+    margin: 2rem 0 3rem;
+}
+
+.jumbotron .wide img {
+    margin-bottom: 2.5rem;
+}
+
+/* 3rd container */
+.empty {
+    position: relative;
+    top: -14rem;
+    width: 85%;
+}
+
+.empty h2 {
+    margin: 1rem 0 3rem;
+}
+
+.empty img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#miss img{
+    height: 41.5%;
+}
+
+#small {
+    margin-top: 2rem;
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+
+.empty h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1.1rem;
+}
+
+.empty p {
+    font-size: 1.1rem;
+    opacity: 0.7;
+    width: 90%;
+}
+
+.empty a {
+    color: #505962;
+}
+
+.empty a:hover {
+    text-decoration: none;
+    color: hsl(136, 54%, 61%);
+}
+
+
+/* footer  */
+footer {
+    background-color: hsl(233, 26%, 24%);
+    height: 11rem;
+    margin: -10rem auto 0;
+    /* text-align: center; */
+    /* width: 85%; */
+}
+
+.foot {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+#filter {
+    filter: invert(90%);
+    -webkit-filter: (90%);
+    width: 40%;
+}
+
+#icons {
+    margin-top: 2rem;
+}
+
+#icons a {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-right: 6px;
+}
+
+#icons a:hover {
+    color: hsl(136, 54%, 61%);
+}
+
+.foot ul {
+    margin-left: -4rem;
+    font-size: 0.8rem;
+}
+
+.foot li {
+    padding-bottom: 0.7rem;
+}
+
+.foot a {
+    color: white;
+    list-style: none;
+}
+
+.foot a:hover {
+    color: hsl(136, 54%, 61%);
+    text-decoration: none;
+}
+
+#shift {
+    margin-left: -10rem;
+}
+
+.end {
+    text-align: right;
+}
+
+.end p {
+    color: white;
+    opacity: .5;
+    font-size: 0.8rem;
+    padding-top: 1rem;
+    letter-spacing: 0.05rem;
+}
+
+
+/* media queries */
+
+@media (max-width: 768px) {
+    #remove {
+        display: none;
+    }
+
+    #flex-end {
+        margin-left: 24rem;
+    }
+
+    #pat {
+        display: none;
+    }
+
+    #pat2 {
+        display: block;
+        position: relative;
+        top: -95%;
+        width: 130%;
+        left: -5rem;
+        z-index: -2;
+    }
+
+    #mock {
+        width: 100%;
+        top: -99%;
+        left: 1rem;
+    }
+
+    #navbarCollapse {
+        background: hsl(136, 54%, 61%);
+        margin-top: 1.5rem;
+        border-radius: 0.2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: center;
+        z-index: -2;
+    }
+
+    .mt-4 h1 {
+        text-align: center;
+        position: relative;
+        top: 20rem;
+    }
+    
+    .mt-4 p {
+        text-align: center;
+        position: relative;
+        top: 20rem;
+    }
+    
+    .mt-4 a {
+        left: 33%;
+        position: relative;
+        top: 20rem;
+    }
+
+    .jumbotron {
+        top: -25rem;
+    }
+    
+    .jumbotron .wide {
+        text-align: center;
+    }
+
+    .jumbotron .wide h2 {
+        width: 75%;
+        margin: 0 auto 1rem;
+    }
+    
+    #lead {
+        width: 78%;
+        margin: 0 auto 3rem;
+    }
+    
+    .jumbotron .wide p {
+        margin: 1rem auto 3rem;
+        width: 75%;
+    }
+
+    .empty {
+        top: -20rem;
+    }
+    
+    .empty h2 {
+        text-align: center;
+        letter-spacing: 0.05rem;
+        margin-bottom: -2rem;
+    }
+    
+    #miss img{
+        height: 55%;
+    }
+
+    #missp {
+        margin-bottom: -10rem;
+    }
+    
+    #small {
+        width: 85%;
+        margin: 2rem auto 1rem;
+    }
+    
+    .empty h4 {
+        width: 85%;
+        margin: 0 auto 1rem;
+    }
+
+    .empty img {
+        margin-top: 4rem;
+    }
+    
+    .empty p {
+        width: 85%;
+        margin: 0 auto 1rem;
+    }
+
+    footer {
+        background-color: hsl(233, 26%, 24%);
+        height: 70%;
+        margin: -12rem auto 0;
+    }
+
+    .foot {
+        text-align: center;
+    }
+    
+    #filter {
+        width: 30%;
+    }
+    
+    #icons {
+        margin-top: 1.5rem;
+    }
+    
+    #icons a {
+        font-size: 1.8rem;
+        margin-right: 10px;
+        margin-left: auto;
+    }
+    
+    .foot ul {
+        margin-top: 1rem;
+    }
+
+    #shift {
+        margin-top: -0.8rem;
+        margin-left: -3.5rem;
+    }
+    
+    .end {
+        text-align: center;
+    }
+    
+    .end p {
+        margin-top: 1rem;
+    }
+
+    /* .myClass {
+        background: rgba(18, 156, 133, 0.7);
+        width: 100%;
+    } */
+}
+
+
+@media (max-width: 635px) {
+    #flex-end {
+        margin-top: -2.5rem;
+        margin-left: 22rem;
+    }
+
+    #pat2 {
+        top: -110%;
+        width: 150%;
+    }
+
+    #mock {
+        width: 100%;
+        top: -105%;
+        left: 1rem;
+    }
+
+    .mt-4 h1 {
+        font-size: 3rem;
+        top: 12rem;
+    }
+    
+    .mt-4 p {
+        font-size: 1.2rem;
+        top: 12rem;
+    }
+    
+    .mt-4 a {
+        top: 12rem;
+    }
+
+    .jumbotron {
+        top: -20rem;
+    }
+}
